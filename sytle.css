@@ -12,10 +12,40 @@ body {
   height: 800px;
   width: 830px;
   float: left;
+  background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+.leftBox .logo {
+  margin-left: 165px;
+  margin-top: 55px;
+  width: 160px;
+}
+
+.leftBox .coming {
+  text-transform: uppercase;
+  font-stretch: ultra-expanded;
+  font-weight: 300;
+  margin-left: 165px;
+  color: #413a3a;
+}
+
+.leftBox .coming span {
+  color: #ce9797;
+}
+
+.leftBox .callTo {
+  margin-left: 165px;
+  width: 430px;
+  color: #ce9797;
+}
+
+.leftBox form {
+  margin-left: 165px;
 }
 
 .rightBox {
   float: right;
+  margin-top: -11px;
   width: 610px;
 }
 /*# sourceMappingURL=sytle.css.map */

@@ -11,11 +11,39 @@ body {
     height: 800px;
     width: 830px;
     float: left;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    .logo {
+        margin-left: 165px;
+        margin-top: 55px;
+        width: 160px;
+    }
+    .coming {
+        text-transform: uppercase;
+        font-stretch: ultra-expanded;;
+        font-weight: 300;
+        margin-left: 165px;
+        color: hsl(0, 6%, 24%);
+        span {
+            color: hsl(0, 36%, 70%);
+        }
+        
+    }
+    .callTo {
+        margin-left: 165px;
+        width: 430px;
+        color: hsl(0, 36%, 70%);
+    }
+    form {
+        margin-left: 165px;
+    }
+    
 }
+
+ 
 
 .rightBox {
     float: right;
-    
+    margin-top: -11px;
     width: 610px;
 
 }
