@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1440px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .leftBox {
@@ -13,6 +19,7 @@ body {
   width: 830px;
   float: left;
   background-image: url(./images/bg-pattern-desktop.svg);
+  background-color: Linear, 135deg, from white, to #fff5f5;
 }
 
 .leftBox .logo {
@@ -22,30 +29,107 @@ body {
 }
 
 .leftBox .coming {
+  line-height: 1.25;
+  margin-top: 135px;
   text-transform: uppercase;
-  font-stretch: ultra-expanded;
   font-weight: 300;
   margin-left: 165px;
   color: #413a3a;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 21px;
 }
 
 .leftBox .coming span {
   color: #ce9797;
+  width: 275px;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 21px;
 }
 
 .leftBox .callTo {
   margin-left: 165px;
   width: 430px;
-  color: #ce9797;
+  color: rgba(206, 151, 151, 0.75);
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 35px;
 }
 
 .leftBox form {
   margin-left: 165px;
 }
 
+.leftBox form input[type=email] {
+  z-index: -1;
+  width: 400px;
+  height: 48px;
+  border-radius: 25px;
+  padding-left: 20px;
+  border: 1px solid rgba(206, 151, 151, 0.4);
+  font-size: small;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.leftBox form input[type=submit] {
+  z-index: 5;
+  position: absolute;
+  width: 90px;
+  height: 52px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  margin-left: -90px;
+}
+
+.leftBox form input[type=submit]:hover {
+  z-index: 5;
+  cursor: pointer;
+  background-image: none;
+  background-color: rgba(248, 191, 191, 0.5);
+  -webkit-box-shadow: 5px 5px 15px rgba(206, 151, 151, 0.5);
+          box-shadow: 5px 5px 15px rgba(206, 151, 151, 0.5);
+}
+
+.leftBox form .fas {
+  z-index: 9;
+  font-size: larger;
+  color: white;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 15px;
+}
+
+.leftBox form .fas:hover {
+  cursor: pointer;
+}
+
 .rightBox {
   float: right;
   margin-top: -11px;
+  margin-right: -12px;
   width: 610px;
+  height: 800px;
+}
+
+footer {
+  position: relative;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: 200px;
+  left: 310px;
+  opacity: 0.5;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:link {
+  color: white;
 }
 /*# sourceMappingURL=sytle.css.map */
