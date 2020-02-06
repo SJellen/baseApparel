@@ -10,8 +10,7 @@ body {
   min-width: fit-content;
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .leftBox {
@@ -57,12 +56,12 @@ body {
   margin-bottom: 35px;
 }
 
-.leftBox form {
+.leftBox .form {
   margin-left: 165px;
 }
 
-.leftBox form input[type=email] {
-  z-index: -1;
+.leftBox .form input[type=email] {
+  z-index: -19;
   width: 400px;
   height: 48px;
   border-radius: 25px;
@@ -72,7 +71,23 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.leftBox form input[type=submit] {
+.leftBox .form input[type=email]::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.leftBox .form input[type=email]:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.leftBox .form input[type=email]::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.leftBox .form input[type=email]::placeholder {
+  color: #ce9797;
+}
+
+.leftBox .form button {
   z-index: 5;
   position: absolute;
   width: 90px;
@@ -84,26 +99,26 @@ body {
   margin-left: -90px;
 }
 
-.leftBox form input[type=submit]:hover {
-  z-index: 5;
+.leftBox .form button:hover {
   cursor: pointer;
   background-image: none;
-  background-color: rgba(248, 191, 191, 0.5);
+  background-image: linear-gradient(135deg, #fff5f5, #f8bfbf);
   -webkit-box-shadow: 5px 5px 15px rgba(206, 151, 151, 0.5);
           box-shadow: 5px 5px 15px rgba(206, 151, 151, 0.5);
 }
 
-.leftBox form .fas {
-  z-index: 9;
-  font-size: larger;
-  color: white;
+.leftBox .error {
   position: absolute;
-  margin-left: -50px;
-  margin-top: 15px;
+  bottom: 215px;
+  left: 460px;
+  display: none;
 }
 
-.leftBox form .fas:hover {
-  cursor: pointer;
+.leftBox .form .error_para {
+  font-size: medium;
+  margin-left: 20px;
+  display: none;
+  color: #ce9797;
 }
 
 .rightBox {

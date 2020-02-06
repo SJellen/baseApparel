@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,9 +29,18 @@
   Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
 
-    <form action="/action_page.php">
-    <input type="email" name="email" placeholder="Email Address" id="email"><i class="fas fa-chevron-right"></i><input type="submit" value="" id="submit"></i>
-    </form>
+    <div class="form">
+    
+
+    <input type="email" name="mail" placeholder="Email Address" id="mail">
+
+      <img src="images/icon-error.svg" alt="error" class="error">
+
+   <button onclick="checkEmail()">
+    <img src="images/icon-arrow.svg" alt="icon-arrow">
+   </button>
+   <p class="error_para">Please provide a valid email</p>
+    </div>
   </div>
  
 
@@ -46,5 +56,7 @@
       Coded by <a href="#">Scott Jellen</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

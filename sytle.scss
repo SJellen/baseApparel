@@ -10,8 +10,8 @@ body {
     min-width: fit-content;
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
+    
     
 }
 
@@ -53,10 +53,10 @@ body {
         font-weight: 400;
         margin-bottom: 35px;
     }
-    form {
+    .form {
         margin-left: 165px;
         input[type=email] {
-            z-index: -1;
+            z-index: -19;
             width: 400px;
             height: 48px;
             border-radius: 25px;
@@ -65,7 +65,10 @@ body {
             font-size: small;
             font-family: 'Josefin Sans', sans-serif;
         }
-        input[type=submit] {
+        input[type=email]::placeholder {
+            color: hsl(0, 36%, 70%);
+        }
+        button {
             z-index: 5;
             position: absolute;
             width: 90px;
@@ -76,26 +79,30 @@ body {
             background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
             margin-left: -90px; 
         }
-        input[type=submit]:hover {
-            z-index: 5;
+        button:hover {
+            
             cursor: pointer;
             background-image: none;
-            background-color: hsla(0, 80%, 86%, .5);
+            background-image: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
             box-shadow: 5px 5px 15px hsla(0, 36%, 70%, .5);
+            
+        }
+       
 
-        }
-        .fas {
-            z-index: 9;
-            font-size: larger;
-            color: white;
-            position: absolute;
-            margin-left: -50px;
-            margin-top: 15px;
-        }
-        .fas:hover {
-            cursor: pointer;
-        }
+    }
+    .error {
+        position: absolute;
+        bottom: 215px;
+        left: 460px;
+        display: none;
+    }
 
+
+    .form .error_para {
+        font-size: medium;
+        margin-left: 20px;
+        display: none;
+        color: hsl(0, 36%, 70%);
     }
     
 }
