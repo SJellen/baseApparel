@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -146,5 +146,123 @@ footer a {
 
 footer a:link {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 375px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+  }
+  .leftBox {
+    margin-top: 67px;
+    margin-left: 43px;
+    background-image: url(./images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+  }
+  .leftBox .logo {
+    margin-left: 32px;
+    margin-top: -55px;
+    margin-bottom: 100px;
+    width: 100px;
+  }
+  .leftBox .coming {
+    line-height: 1;
+    margin-top: 235px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    margin-left: 5px;
+    color: #413a3a;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 9px;
+  }
+  .leftBox .coming span {
+    color: #ce9797;
+    width: 275px;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 9px;
+  }
+  .leftBox .callTo {
+    text-align: center;
+    margin-left: 15px;
+    width: 350px;
+    color: rgba(206, 151, 151, 0.75);
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+  .leftBox .form {
+    margin-left: 15px;
+  }
+  .leftBox .form input[type=email] {
+    z-index: -19;
+    width: 300px;
+    height: 48px;
+    border-radius: 25px;
+    padding-left: 20px;
+    border: 1px solid rgba(206, 151, 151, 0.4);
+    font-size: small;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .leftBox .form input[type=email]::-webkit-input-placeholder {
+    color: #ce9797;
+  }
+  .leftBox .form input[type=email]:-ms-input-placeholder {
+    color: #ce9797;
+  }
+  .leftBox .form input[type=email]::-ms-input-placeholder {
+    color: #ce9797;
+  }
+  .leftBox .form input[type=email]::placeholder {
+    color: #ce9797;
+  }
+  .leftBox .form button {
+    z-index: 5;
+    position: absolute;
+    width: 75px;
+    height: 52px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    margin-left: -70px;
+  }
+  .leftBox .form button:hover {
+    cursor: pointer;
+    background-image: none;
+    background-image: linear-gradient(135deg, #fff5f5, #f8bfbf);
+    -webkit-box-shadow: 5px 5px 15px rgba(206, 151, 151, 0.5);
+            box-shadow: 5px 5px 15px rgba(206, 151, 151, 0.5);
+  }
+  .leftBox .error {
+    position: absolute;
+    top: 690px;
+    left: 270px;
+    display: none;
+  }
+  .leftBox .form .error_para {
+    font-size: medium;
+    margin-left: 20px;
+    display: none;
+    color: #ce9797;
+  }
+  .rightBox {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sytle.css.map */
