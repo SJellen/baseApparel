@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Base Apparel 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/Base Apparel" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/Base Apparel.svg">
+   
   </a>
 </p>
 
