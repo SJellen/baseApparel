@@ -1,4 +1,7 @@
 <h1 align="center">Welcome to Base Apparel 👋</h1>
+
+![screenshot](https://github.com/SJellen/baseApparel/blob/master/ScreenShot.png)
+
 <p>
   <a href="https://www.npmjs.com/package/Base Apparel" target="_blank">
    
